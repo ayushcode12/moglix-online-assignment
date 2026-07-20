@@ -1,19 +1,26 @@
 # Moglix Online Assessment
 
-Language Used:
+## Problem
+Given a string containing only '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+
+## Language
 Java
 
-Problem:
-Longest Valid Parentheses
+## Approach
+This solution uses a two-pass traversal:
+- Left-to-right scan to handle extra closing parentheses.
+- Right-to-left scan to handle extra opening parentheses.
 
-Approach:
-Implemented an O(n) solution using Stack.
+The algorithm tracks the number of opening and closing brackets and updates the maximum valid substring length whenever both counts are equal.
 
-Time Complexity:
+## Time Complexity
 O(n)
 
-Space Complexity:
-O(n)
+## Space Complexity
+O(1)
 
-Author:
+## Author
 Ayush Jain
+
+GitHub: https://github.com/ayushcode12
+LinkedIn: https://www.linkedin.com/in/ayushjain-dev
